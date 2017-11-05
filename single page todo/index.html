@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>official todo  </title>
+<link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+
+<body class="login">
+<!-- header starts here -->
+<div id="facebook-Bar">
+  <div id="facebook-Frame">
+    <div id="logo"> <a href="">TODO APP </a> </div>
+    <div id="header-main-right">
+          <div id="header-main-right-nav">
+        <form method="post" action="validate_login.php" name="contactForm">
+          <table border="0" style="border:none">
+            <tr> 
+              <td ><input type="text" tabindex="1"  id="username" placeholder="Username Only" name="username" class="inputtext radius1" value="" required></td>
+              <td ><input type="password" tabindex="2"  id="userpassword" placeholder="Password" name="password" class="inputtext radius1" required ></td>
+              <td ><input type="submit" class="fbbutton" name="login" value="Login" /></td>
+            </tr>
+             </table>
+        </form>
+      </div>
+          </div>
+      </div>
+</div>
+<div class="loginbox radius">
+<h2 style="color:#141823; text-align:center;">SIGNUP</h2>
+  <div class="loginboxinner radius">
+      <div class="loginheader">
+        <h4 class="title">CREATE YOUR NEW ACCOUNT FOR FREE</h4>
+      </div><!--loginheader-->
+        
+        <div class="loginform">
+                  
+          <form id="login" action="signup.php" method="post"  name="myForm">
+              <p>
+                    <input type="text" id="username" name="username" placeholder="First Name" value="" class="radius mini" /> <input type="text" id="username" name="lname" placeholder="last name " value="" class="radius mini" />
+                       
+            
+                    <input type="text" id="username" name="email" placeholder="Your Email" value=""  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="radius" required />
+                
+                          
+            
+                    <input type="text" id="username" name="username" placeholder="USER NAME" value="" class="radius" required />
+                </p>
+        
+        
+        
+        <p>
+                    <input type="password" id="password" name="Password_1" placeholder="password"  required />
+                </p>
+                <p>
+                    <input type="password" id="password" name="Password_2" placeholder="re enter Password" class="radius"    required/>
+                </p>
+                <p>
+                  <button type="submit" class="radius title" name="client_login"    onclick="ValidateEmail(document.vForm.email)">Sign Up </button>
+                </p>
+            </form>
+        </div><!--loginform-->
+    </div><!--loginboxinner-->
+</div><!--loginbox-->
+
+</body>
+
+</html>
